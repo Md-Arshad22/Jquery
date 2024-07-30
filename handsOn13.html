@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use of jQuery of DOM Manipulation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
+</head>
+<body>
+    
+    <h1>Jquery Mouse Events</h1>
+    <div id="box">
+        <h2>HandsOn 13:Event handling using jQuery</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+
+<script>
+    $(document).ready(function(){
+        $('#box').click(function(){     
+        $('#box').css('background-color','yellow');
+        });
+        $('#box').dblclick(function(){      
+        $('#box').css('background-color','purple');
+        });
+        $('#box').contextmenu(function(){       
+        $('#box').css('background-color','green');
+        }); 
+        $('#box').mouseenter(function(){        
+        $('#box').css('background-color','blue');
+        });
+    });
+</script>
+</body>
+
+
+</html>
