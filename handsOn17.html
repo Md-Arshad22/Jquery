@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hands On - 17: Use of jQuery Parent() method</title>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .grand-parent, .parent, .child {
+      padding: 10px;
+      margin: 10px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hands On - 17: Use of jQuery Parent() method</h1>
+  <div class="grand-parent">
+    <p>This is the grand-parent element.</p>
+    <div class="parent">
+      <p>This is the parent element.</p>
+      <div class="child">
+        <p>This is the child element.</p>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function(){  
+    $('.child').css('background-color', 'lightblue');
+	$('.parent').parent().css('background-color', 'green');
+    });
+  </script>
+</body>
+</html>
 
