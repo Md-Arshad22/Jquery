@@ -1,1 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Load JSON Data with jQuery AJAX</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.ajax({
+                url: 'data.json',  
+                dataType: 'json',  
+                success: function(data) {
+                    $('#output').html(`
+                        <p>Name: ${data.name}</p>
+                        <p>Age: ${data.age}</p>
+                        <p>City: ${data.city}</p>`);
+                },
+                error: function() {
+                    $('#output').text('Error loading JSON file');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Hands On 18: Load JSON Data with jQuery AJAX</h1>
+    <div id="output">
+        
+    </div>
+</body>
+</html>
 
