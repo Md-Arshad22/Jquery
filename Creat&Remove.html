@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating and Removing Elements</title>
+</head>
+<body>
+    <h1>HandsOn  6: Creating and Removing Elements</h1>
+    <h2>Hello, Students!</h2>
+    <ul id="myList">
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+    </ul>
+    <button id="addButton">Add Item</button>
+    <button id="removeButton">Remove Item</button>
+
+    <script>
+        document.getElementById("addButton").addEventListener("click", function() {
+            let newItem = document.createElement("li");
+            newItem.innerText = "New Item";
+            document.getElementById("myList").appendChild(newItem);
+        });
+
+        document.getElementById("removeButton").addEventListener("click", function() {
+            let list = document.getElementById("myList");
+            if (list.children.length > 0) {
+                list.removeChild(list.lastElementChild);
+            }
+        });
+    </script>
+</body>
+</html>
 
