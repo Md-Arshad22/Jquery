@@ -1,1 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hands On 15: Use of jQuery Effects</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Hands On 15: Use of jQuery Effects</h1>
+    <h1>Hands On 15: jQuery Methods</h1>
+    <button id="hideButton">Hide Paragraph</button>
+    <p id="myParagraph">This paragraph will be hidden when the button is clicked.</p>
 
+    <script>
+        $(document).ready(function() {
+            $("#hideButton").click(function() { 
+                $("#myParagraph").hide();
+            });
+        });
+    </script>
+</body>
+</html>
