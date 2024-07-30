@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hands On - 14:Use of jQuery for DOM manipulation</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Hands On - 14: Use of jQuery for DOM manipulation</h1>
+    <p id="test1">This is Paragraph1</p>
+    <p id="test2">This is <b>Paragraph2</b></p>
+    <p><input type="text" name="" value="jQuery DOM Manipulation" id="test3"></p>
+
+    <button id="bt1">Text</button>
+    <button id="bt2">HTML</button>      
+    <button id="bt3">Value</button>       
+<script>
+    $(document).ready(function(){
+        $("#bt1").click(function(){
+            alert($('#test1').text());
+        })
+        $("#bt2").click(function(){
+            alert($('#test2').html());
+        })
+        $("#bt3").click(function(){
+            alert($('#test3').val());
+        })
+    });
+</script>
+
+</body>
+</html>
 
