@@ -1,1 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hands On 5:Modifying DOM Elements</title>
+</head>
+<body>
+    <h1>Hands On 5: Modifying DOM Elements</h1>
+    <h2>Hello Students!</h2>
+    <hr>
+        <input type="text" id="textInput" placeholder="Enter text">
+        <button id="changeTextBtn">Text Changed</button>
+        <p id="outputText"></p>
+
+    <script>
+        document.getElementById("changeTextBtn").addEventListener("click", function() {
+            let inputText = document.getElementById("textInput").value;
+            document.getElementById("outputText").innerText = "You entered: " + inputText;
+            document.getElementById("outputText").style.color = "blue";
+        });
+    </script>
+</body>
+</html>
 
