@@ -1,1 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HandsOn 11: Use of various selectors in jQuery</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+</head>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("p").css("border", "3px solid red");    
+     $(".a").css("border", "3px solid blue"); 
+      $("#b,div").css("border", "3px solid yellow");   
+     });
+  </script>
+<body>
+  <h1>HandsOn 11: Use of various selectors in jQuery</h1>
+    <p>This is an Element Selector</p>
+    <p class="a">This is a class selector </p>
+    <p id="b">This is an id selector</p>
+    <div>This is a div</div>
+</body>
+</html>
+
 
