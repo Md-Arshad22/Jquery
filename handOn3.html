@@ -1,1 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Basics</title>
+</head>
+<body>
+    <h1>HandsOn 3: DOM Manipulations</h1>
+    <h2 id="heading">Hello, Students!</h1>
+    <button id="changeTextButton">Change Text</button>
+
+    <script>
+        document.getElementById("changeTextButton").addEventListener("click", function() {
+            document.getElementById("heading").innerText = "Changed Text!";
+            document.getElementById("heading").style.color = "red";
+        });
+    </script>
+</body>
+</html>
 
