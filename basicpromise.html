@@ -1,1 +1,30 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HandsOn 8: Create a basic promise object</title>
+</head>
+<body>
+    <h1>HandsOn 8: Create a basic promise object</h1>
+    <h2>Hello Students!</h2>
+    <script>
+        let promise = new Promise(function (resolve, reject) {
+           const x = "edunetfoundation";
+           const y = "edunetfoundation"
+           if (x === y) {
+               resolve();
+           } else {
+               reject();
+           }
+       });
+       promise.
+           then(function () {
+               console.log('Success');
+           }).
+           catch(function () {
+               console.log('Some error has occurred');
+           });
+    </script>
+</body>
+</html>
