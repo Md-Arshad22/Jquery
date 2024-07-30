@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Traversal Hands-On</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>HandsOn 7: DOM Traversal</h1>
+    <h2>Hello Students!</h2>
+    <div id="container">
+        <p class="para">This is the first paragraph.</p>
+        <p class="para">This is the second paragraph.</p>
+        <p class="para">This is the third paragraph.</p>
+    </div>
+    <button id="highlightButton">Highlight Paragraphs</button>
+    <script>
+function highlightParagraphs() {
+    const paragraphs = document.querySelectorAll('.para');
+    
+    paragraphs.forEach(paragraph => {
+        paragraph.classList.toggle('highlight');
+    });
+}
+
+document.getElementById('highlightButton').addEventListener('click', highlightParagraphs);</script>
+</body>
+</html>
 
